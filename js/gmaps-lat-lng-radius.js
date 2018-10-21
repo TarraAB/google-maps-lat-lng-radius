@@ -85,6 +85,7 @@
         lat: center.lat(),
         lng: center.lng(),
         radius_km: Math.round(circle.getRadius() / 1000)
+        radius_m: circle.getRadius()
       };
     } else if (currentGeometry === "polygon") {
       geo = polygon.getPath().getArray();
